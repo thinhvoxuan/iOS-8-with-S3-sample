@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ayk-RP-w7T">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Upload Pictures-->
+        <scene sceneID="izb-In-Rdy">
+            <objects>
+                <viewController id="bLd-pX-hEw" customClass="UploadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wm-QR-d4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="pi5-y7-Ro9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRx-0b-1H4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iqV-BX-ebJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="60"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ieL-yL-usl">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UploadCollectionViewCell" id="l1D-8D-tjs" customClass="UploadCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="74" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-lB-Jd2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="IcE-Ft-Y6d">
+                                                    <rect key="frame" x="0.0" y="98" width="100" height="2"/>
+                                                </progressView>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploaded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4T-1l-w0b">
+                                                    <rect key="frame" x="0.0" y="35" width="100" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="MS5-lB-Jd2" firstAttribute="trailing" secondItem="IcE-Ft-Y6d" secondAttribute="trailing" id="2UX-vz-uy5"/>
+                                            <constraint firstItem="IcE-Ft-Y6d" firstAttribute="top" secondItem="l4T-1l-w0b" secondAttribute="bottom" constant="33" id="2mI-DE-MgX"/>
+                                            <constraint firstItem="l4T-1l-w0b" firstAttribute="trailing" secondItem="IcE-Ft-Y6d" secondAttribute="trailing" id="3JX-CP-Ztr"/>
+                                            <constraint firstItem="IcE-Ft-Y6d" firstAttribute="bottom" secondItem="MS5-lB-Jd2" secondAttribute="bottom" id="5Ch-uj-98Q"/>
+                                            <constraint firstItem="l4T-1l-w0b" firstAttribute="leading" secondItem="IcE-Ft-Y6d" secondAttribute="leading" id="9hO-tr-4A8"/>
+                                            <constraint firstItem="l4T-1l-w0b" firstAttribute="centerY" secondItem="MS5-lB-Jd2" secondAttribute="centerY" id="EVM-7m-zzX"/>
+                                            <constraint firstItem="IcE-Ft-Y6d" firstAttribute="leading" secondItem="l1D-8D-tjs" secondAttribute="leading" id="GPw-aK-0XZ"/>
+                                            <constraint firstItem="MS5-lB-Jd2" firstAttribute="top" secondItem="l1D-8D-tjs" secondAttribute="top" id="KLG-U3-eNo"/>
+                                            <constraint firstAttribute="trailing" secondItem="l4T-1l-w0b" secondAttribute="trailing" id="OOo-3D-qsD"/>
+                                            <constraint firstAttribute="bottom" secondItem="IcE-Ft-Y6d" secondAttribute="bottom" id="cOJ-vq-2Yw"/>
+                                            <constraint firstItem="l4T-1l-w0b" firstAttribute="leading" secondItem="MS5-lB-Jd2" secondAttribute="leading" id="dXm-I3-cDG"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="MS5-lB-Jd2" id="RrS-ir-bhk"/>
+                                            <outlet property="label" destination="l4T-1l-w0b" id="5sq-Hh-a3I"/>
+                                            <outlet property="progressView" destination="IcE-Ft-Y6d" id="xdQ-R2-VyN"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="bLd-pX-hEw" id="twk-dl-LYS"/>
+                                    <outlet property="delegate" destination="bLd-pX-hEw" id="LaO-5Y-zyx"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iqV-BX-ebJ" secondAttribute="trailing" id="41S-t9-wtE"/>
+                            <constraint firstItem="iqV-BX-ebJ" firstAttribute="top" secondItem="ZRx-0b-1H4" secondAttribute="top" id="59K-7j-mGm"/>
+                            <constraint firstItem="iqV-BX-ebJ" firstAttribute="leading" secondItem="ZRx-0b-1H4" secondAttribute="leading" id="7Ao-ZD-KLz"/>
+                            <constraint firstAttribute="bottom" secondItem="iqV-BX-ebJ" secondAttribute="bottom" id="wUf-Rr-wup"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload Pictures" id="OK8-Jf-PGZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="QEk-eb-K7Z">
+                            <connections>
+                                <action selector="showAlertController:" destination="bLd-pX-hEw" id="3Ou-F3-jI5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="iqV-BX-ebJ" id="36F-nS-A2p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzg-eM-BeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959" y="-42"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="YUd-2z-feY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ayk-RP-w7T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Upload" image="first" id="eIb-kQ-lSr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9X8-Pz-s5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="86j-Bd-gVt">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="bLd-pX-hEw" kind="relationship" relationship="rootViewController" id="ny5-R4-aet"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8h-va-avH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.125" y="-41.197183098591545"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
