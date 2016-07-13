@@ -50,11 +50,19 @@ This sample demonstrates the Amazon S3 TransferManager found in the AWS Mobile S
 
 ![alt text](https://raw.githubusercontent.com/voxuanthinh/iOS-8-with-S3-sample/master/img/h1.png)
 
+--
+
 ![alt text](https://raw.githubusercontent.com/voxuanthinh/iOS-8-with-S3-sample/master/img/h2.png)
+
+--
 
 ![alt text](https://raw.githubusercontent.com/voxuanthinh/iOS-8-with-S3-sample/master/img/h3.png)
 
+--
+
 ![alt text](https://raw.githubusercontent.com/voxuanthinh/iOS-8-with-S3-sample/master/img/h4.png)
+
+--
 
 ![alt text](https://raw.githubusercontent.com/voxuanthinh/iOS-8-with-S3-sample/master/img/h5.png)
 
